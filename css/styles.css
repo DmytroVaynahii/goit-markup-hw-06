@@ -736,12 +736,14 @@ p {
 }
 
 .footer-subscribe {
-  margin-left: auto;
+  min-width: 570px;
+  min-height: 86px;
+  margin-left: 93px;
 }
 
-.subscribe-wrapper {
-  display: inline-block;
+.footer-form {
   position: relative;
+  display: flex;
 }
 
 .form-input {
@@ -756,8 +758,8 @@ p {
   background-color: transparent;
   border-radius: 4px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
-
 
 .form-input::placeholder {
   font-size: 16px;
@@ -769,6 +771,7 @@ p {
   position: absolute;
   right: 28px;
   top: 50%;
+ 
   transform: translateY(-50%);
   width: 24px;
   height: 24px;
@@ -1109,6 +1112,7 @@ p {
   color: var(--accent-color);
   text-decoration: underline;
   font-weight: var(--regular-font-weight);
+  padding-left: 4px;
 }
 
 .form-button {
